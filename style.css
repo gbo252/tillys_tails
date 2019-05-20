@@ -1,5 +1,4 @@
 /* FONTS */
-
 @font-face {
     font-family: 'Kalam';
     font-style: normal;
@@ -18,32 +17,22 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* MASTER */
 
+/* MASTER */
 body {
     font-family: 'Kalam';
 }
 
-@media only screen and (max-width: 991px) {
-    .display-4 { font-size: 3.2rem; }
-}
-
-@media only screen and (max-width: 767px) {
-    .display-4 { font-size: 2.8rem; }
-}
-
-@media only screen and (max-width: 575px) {
-    .display-4 { font-size: 2.5rem; }
-}
 
 /* NAVBAR */
-
 button.navbar-toggler, button.navbar-toggler:active, button.navbar-toggler:focus {
     outline: none !important;
 }
 
 ul.navbar-nav li.nav-item a.nav-link {
     color: rgb(8, 172, 248);
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 ul.navbar-nav li.nav-item a.nav-link:hover {
@@ -66,12 +55,32 @@ div.socials a:hover {
 
 
 /* JUMBOTRON */
-
 .jumbo-custom {
-    background-image: url(./images/jumbo-bg2.jpg);
+    background-image: url(./images/jumbo-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
     color: white;
     text-shadow: 2px 2px 4px rgb(0, 0, 0);
+}
+
+
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1199px) {
+    ul.navbar-nav li.nav-item a.nav-link:hover {
+        background-color: rgba(128, 128, 128, 0.05);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .display-4 { font-size: 3.2rem; }
+}
+
+@media only screen and (max-width: 767px) {
+    .display-4 { font-size: 2.8rem; }
+}
+
+@media only screen and (max-width: 575px) {
+    .display-4 { font-size: 2.5rem; }
 }
