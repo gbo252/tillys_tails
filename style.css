@@ -1,9 +1,17 @@
-/* FONTS */
+/* ------------ FONTS ------------ */
+
+@font-face {
+    font-family: 'Kalam';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Kalam Light'), local('Kalam-Light'), url(https://fonts.gstatic.com/s/kalam/v9/YA9Qr0Wd4kDdMtD6GjLMkiQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 @font-face {
     font-family: 'Kalam';
     font-style: normal;
     font-weight: 400;
-    font-display: swap;
     src: local('Kalam'), local('Kalam-Regular'), url(https://fonts.gstatic.com/s/kalam/v9/YA9dr0Wd4kDdMthROCc.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
@@ -12,25 +20,39 @@
     font-family: 'Kalam';
     font-style: normal;
     font-weight: 700;
-    font-display: swap;
     src: local('Kalam Bold'), local('Kalam-Bold'), url(https://fonts.gstatic.com/s/kalam/v9/YA9Qr0Wd4kDdMtDqHTLMkiQ.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+/* ------------ MASTER STYLES ------------ */
 
-/* MASTER */
 body {
-    font-family: 'Kalam';
+    font-family: 'Kalam', cursive;
+}
+
+.tilly-color {
+    color: rgb(8, 172, 248);
+}
+
+.display-5 {
+    font-size: 3.0rem;
+    font-weight: 300;
+}
+
+.display-6 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    max-width: 400px;
 }
 
 
 /* NAVBAR */
+
 button.navbar-toggler, button.navbar-toggler:active, button.navbar-toggler:focus {
     outline: none !important;
 }
 
 ul.navbar-nav li.nav-item a.nav-link {
-    color: rgb(8, 172, 248);
     padding-top: 4px;
     padding-bottom: 4px;
 }
@@ -40,7 +62,7 @@ ul.navbar-nav li.nav-item a.nav-link:hover {
     text-decoration: underline;
 }
 
-div.socials a:hover {
+div.socials a:hover, span.socials a:hover {
     text-decoration: none;
 }
 
@@ -48,39 +70,107 @@ div.socials a:hover {
     border-color: rgb(8, 172, 248);
 }
 
+.card-image-overlay:hover {
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.btn-custom:hover {
+    background-color: rgb(8, 172, 248);
+    border-color: rgb(8, 172, 248);
+}
+
+.card-link-overlay:hover~.btn-custom {
+    background-color: rgb(8, 172, 248);
+    border-color: rgb(8, 172, 248);
+    color: white;
+}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(48,189,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-
+/* ------------ HOME PAGE ------------ */
 
 /* JUMBOTRON */
+
 .jumbo-custom {
+    margin-top: 54.2px;
     background-image: url(./images/jumbo-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
-    color: white;
-    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    background-position: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+}
+
+.quote {
+    background-color: #6ED1FF;
+}
+
+.social-icons {
+    width: 85px;
+    height: 85px;
+}
+
+.social-icons:hover, .nav-social-icons:hover {
+    transform: scale(1.1);
 }
 
 
 
-/* MEDIA QUERIES */
+
+
+/* ------------ MEDIA QUERIES ------------ */
+
 @media only screen and (max-width: 1199px) {
-    ul.navbar-nav li.nav-item a.nav-link:hover {
-        background-color: rgba(128, 128, 128, 0.05);
+    .display-6 {
+        font-size: 1.4rem;
+    }
+    .social-icons {
+        width: 75px;
+        height: 75px;
     }
 }
 
 @media only screen and (max-width: 991px) {
-    .display-4 { font-size: 3.2rem; }
+    .display-6 {
+        font-size: 1.7rem;
+    }
+    .display-5 {
+        font-size: 3.0rem;
+    }
+    .display-4 {
+        font-size: 3.2rem;
+    }
+    .h4 {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (max-width: 767px) {
-    .display-4 { font-size: 2.8rem; }
+    .display-5 {
+        font-size: 2.6rem;
+    }
+    .display-4 {
+        font-size: 2.8rem;
+    }
+    .h4 {
+        font-size: 1.1rem;
+    }
 }
 
 @media only screen and (max-width: 575px) {
-    .display-4 { font-size: 2.5rem; }
+    .display-6 {
+        font-size: 1.3rem;
+    }
+    .display-5 {
+        font-size: 2.0rem;
+    }
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .social-icons {
+        width: 50px;
+        height: 50px;
+    }
 }
