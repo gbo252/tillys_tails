@@ -34,15 +34,8 @@ body {
     color: rgb(8, 172, 248);
 }
 
-.display-5 {
-    font-size: 3.0rem;
-    font-weight: 300;
-}
-
-.display-6 {
-    font-size: 1.7rem;
-    font-weight: 300;
-    max-width: 400px;
+.opaque-half {
+    opacity: 0.5;
 }
 
 /* NAVBAR */
@@ -73,46 +66,34 @@ div.socials a:hover, span.socials a:hover {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(48,189,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* ------------ HOME PAGE ------------ */
+ul.navbar-nav li.nav-item a.nav-active {
+    font-size: 1.1rem; 
+    color: rgb(8, 172, 248);
+}
 
-.jumbo-custom {
-    background-image: url(./images/jumbo-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+/* FOOTER + SOCIALS */
+
+.social-icons:hover, .nav-social-icons:hover {
+    transform: scale(1.1);
+}
+
+/* ------------ MEDIA QUERIES ------------ */
+
+.display-5 {
+    font-size: 3.0rem;
+    font-weight: 300;
+}
+
+.display-6 {
+    font-size: 1.7rem;
+    font-weight: 300;
+    max-width: 400px;
 }
 
 .social-icons {
     width: 85px;
     height: 85px;
 }
-
-.social-icons:hover, .nav-social-icons:hover {
-    transform: scale(1.1);
-}
-
-.card-image-overlay:hover {
-    background-color: #000;
-    opacity: 0.5;
-}
-
-.btn-custom {
-    margin-top: auto;
-}
-
-.btn-custom:hover {
-    background-color: rgb(8, 172, 248);
-    border-color: rgb(8, 172, 248);
-}
-
-.card-link-overlay:hover~.btn-custom {
-    background-color: rgb(8, 172, 248);
-    border-color: rgb(8, 172, 248);
-    color: white;
-}
-
-/* ------------ MEDIA QUERIES ------------ */
 
 @media only screen and (max-width: 1199px) {
     .display-6 {
