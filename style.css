@@ -45,7 +45,6 @@ body {
     max-width: 400px;
 }
 
-
 /* NAVBAR */
 
 button.navbar-toggler, button.navbar-toggler:active, button.navbar-toggler:focus {
@@ -70,9 +69,36 @@ div.socials a:hover, span.socials a:hover {
     border-color: rgb(8, 172, 248);
 }
 
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(48,189,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* ------------ HOME PAGE ------------ */
+
+.jumbo-custom {
+    background-image: url(./images/jumbo-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
+}
+
+.social-icons {
+    width: 85px;
+    height: 85px;
+}
+
+.social-icons:hover, .nav-social-icons:hover {
+    transform: scale(1.1);
+}
+
 .card-image-overlay:hover {
     background-color: #000;
     opacity: 0.5;
+}
+
+.btn-custom {
+    margin-top: auto;
 }
 
 .btn-custom:hover {
@@ -85,40 +111,6 @@ div.socials a:hover, span.socials a:hover {
     border-color: rgb(8, 172, 248);
     color: white;
 }
-
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(48,189,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-/* ------------ HOME PAGE ------------ */
-
-/* JUMBOTRON */
-
-.jumbo-custom {
-    margin-top: 54.2px;
-    background-image: url(./images/jumbo-bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.562);
-}
-
-.quote {
-    background-color: #6ED1FF;
-}
-
-.social-icons {
-    width: 85px;
-    height: 85px;
-}
-
-.social-icons:hover, .nav-social-icons:hover {
-    transform: scale(1.1);
-}
-
-
-
-
 
 /* ------------ MEDIA QUERIES ------------ */
 
