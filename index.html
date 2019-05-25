@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Icons -->
-    <link rel="shortcut icon" href="./images/07-icons/paws_blue_icon.png" type="image/png">
+    <link rel="shortcut icon" href="./images/07-icons/paws_orange_icon.png" type="image/png">
     <link rel="apple-touch-icon" sizes="120x120" href="./images/07-icons/apple-touch-icon-120x120-precomposed.png" />
     <link rel="apple-touch-icon" sizes="152x152" href="./images/07-icons/apple-touch-icon-152x152-precomposed.png" />
     <!-- Bootstrap CSS -->
@@ -25,7 +25,7 @@
             <span class="navbar-brand mb-0 mr-3 mr-sm-0 h1 order-sm-2 order-1 order-xl-1 font-weight-normal"
                 style="color: rgb(8, 172, 248);">
                 <span>
-                    <img src="./images/07-icons/paws_blue_icon.png" alt="" class="pb-1" width="30px" height="30px" />
+                    <img src="./images/07-icons/paws_orange_icon.png" alt="" class="pb-1" width="30px" height="30px" />
                 </span>
                 Tilly's Tails Pet Care
             </span>
@@ -95,13 +95,13 @@
                 <div class="col-12 col-md-3">
                 </div>
                 <div class="col-12 col-md-6 px-2 px-sm-5 px-md-0 text-center">
-                    <h1 class="display-4 tilly-color font-weight-light">Tilly's Tails Pet Care</h1>
+                    <h1 class="display-4 tilly-color font-weight-normal">Tilly's Tails Pet Care</h1>
                     <p class="h5 text-black-50 font-weight-normal">Personalised dog
                         walking and pet services in Brighton
                     </p>
                 </div>
                 <div class="col-12 col-md-3 mt-3 mt-md-0 d-flex justify-content-center">
-                    <img src="images/08-original-assets/logo_space.png" class="img-fluid" alt="logo" />
+                    <img src="images/01-home/logo_space.png" class="img-fluid" alt="logo" />
                 </div>
             </div>
 
@@ -114,8 +114,7 @@
                             class="img-fluid rounded-pill card-image-overlay" /></a>
                     <p class="pt-3 px-2 h4 text-center tilly-color font-weight-light">Pet care with an eco-friendly and
                         personal twist</p>
-                    <a role="button" href="./about.html"
-                        class="btn btn-outline-secondary btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">About
+                    <a role="button" href="./about.html" class="btn btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">About
                         Me</a>
                 </div>
                 <div class="col-9 col-sm-5 col-lg-3 mb-5 mb-lg-0 px-xl-4 d-flex flex-wrap justify-content-center">
@@ -124,7 +123,7 @@
                     <p class="pt-3 px-2 h4 text-center tilly-color font-weight-light">Dog walking, pet visits, sitting
                         and more
                     </p>
-                    <a role="button" href="#" class="btn btn-outline-secondary btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">Services
+                    <a role="button" href="#" class="btn btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">Services
                         &
                         Prices</a>
                 </div>
@@ -133,14 +132,13 @@
                             class="img-fluid rounded-pill card-image-overlay" /></a>
                     <p class="pt-3 px-2 h4 text-center tilly-color font-weight-light">Tailored to you and your pets
                         needs</p>
-                    <a role="button" href="#"
-                        class="btn btn-outline-secondary btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">Reviews</a>
+                    <a role="button" href="#" class="btn btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">Reviews</a>
                 </div>
                 <div class="col-9 col-sm-5 col-lg-3 mb-lg-0 px-xl-4 d-flex flex-wrap justify-content-center">
                     <a href="#" class="card-link-overlay"><img src="images/01-home/contact-me.jpg" alt=""
                             class="img-fluid rounded-pill card-image-overlay" /></a>
                     <p class="pt-3 px-2 h4 text-center tilly-color font-weight-light">Enquire now for availability</p>
-                    <a role="button" href="#" class="btn btn-outline-secondary btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">Contact
+                    <a role="button" href="#" class="btn btn-custom mt-auto mx-5 mx-sm-0 mx-xl-5">Contact
                         Me</a>
                 </div>
             </div>
@@ -154,7 +152,7 @@
                 </div>
                 <div class="col-12 col-sm-10 col-md-8 col-lg-5 embed-responsive embed-responsive-16by9 rounded-lg">
                     <iframe class="embed-responsive-item"
-                        src="https://www.youtube.com/embed/jZCye_Kuhac?rel=0;&controls=0&autoplay=1&mute=1"
+                        src="https://www.youtube.com/embed/g2HQqDc6Xq0?rel=0;&controls=0&autoplay=1&mute=1"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
                 </div>
             </div>
@@ -239,19 +237,19 @@
             });
 
             $(".btn-custom").hover(function (event) {
-                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "#000", "opacity": "0.5" });
-                $(event.target).css({ "background-color": "rgb(8, 172, 248)", "border-color": "rgb(8, 172, 248)", "color": "white" });
+                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "#000", "opacity": "0.5", "transform":"scale(1.05)" });
+                $(event.target).css({ "background-color": "white", "color": "#F4993C", "border-color": "#F4993C" });
             }, function (event) {
-                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "none", "opacity": "1" });
-                $(event.target).css({ "background-color": "white", "border-color": "#6c757d", "color": "#6c757d" });
+                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "none", "opacity": "1", "transform":"scale(1)" });
+                $(event.target).css({ "background-color": "#F4993C", "color": "white" });
             });
 
             $(".card-image-overlay").hover(function (event) {
-                $(event.target).parent().siblings(".btn-custom").css({ "background-color": "rgb(8, 172, 248)", "border-color": "rgb(8, 172, 248)", "color": "white" });
-                $(event.target).css({ "background-color": "#000", "opacity": "0.5" });
+                $(event.target).parent().siblings(".btn-custom").css({ "background-color": "white", "color": "#F4993C", "border-color": "#F4993C" });
+                $(event.target).css({ "background-color": "#000", "opacity": "0.5", "transform":"scale(1.05)" });
             }, function (event) {
-                $(event.target).parent().siblings(".btn-custom").css({ "background-color": "white", "border-color": "#6c757d", "color": "#6c757d" });
-                $(event.target).css({ "background-color": "none", "opacity": "1" });
+                $(event.target).parent().siblings(".btn-custom").css({ "background-color": "#F4993C", "color": "white" });
+                $(event.target).css({ "background-color": "none", "opacity": "1", "transform":"scale(1)" });
             });
         });
     </script>
