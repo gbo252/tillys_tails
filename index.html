@@ -146,7 +146,7 @@
             <hr class="mx-5" style="border-top: 1px solid rgb(185, 185, 185)" />
 
             <!-- Quote and Video -->
-            <div class="row mx-5 my-1 my-sm-5 d-flex justify-content-center align-items-center">
+            <div class="row mx-3 mx-sm-5 my-1 my-sm-5 d-flex justify-content-center align-items-center">
                 <div class="col-12 col-sm-10 col-md-8 col-lg-5 px-0 mb-3 mb-lg-0">
                     <p class="display-5 text-center tilly-color">Happy Pet.<br />Happy Owner.<br />Happy Life.</p>
                 </div>
@@ -160,15 +160,15 @@
             <hr class="mx-5" style="border-top: 1px solid rgb(185, 185, 185)" />
 
             <!-- Pictures and Socials -->
-            <div class="row mx-sm-5 mx-0 my-1 my-sm-5 d-flex justify-content-center align-items-center">
-                <div class="col-12 col-sm-10 col-md-8 col-lg-5 px-5 px-sm-0 pb-3 pb-sm-0 order-2 order-lg-1">
+            <div class="row mx-0 mx-sm-5 my-1 my-sm-5 d-flex justify-content-center align-items-center">
+                <div class="col-12 col-sm-8 col-lg-5 px-3 px-sm-0 px-md-3 px-lg-4 px-xl-5 pb-3 pb-sm-0 order-2 order-lg-1">
                     <img src="./images/01-home/socials.jpg" alt="" class="img-fluid rounded-lg" />
                 </div>
                 <div
                     class="col-12 col-sm-10 col-md-8 col-lg-5 mb-3 mb-lg-0 order-1 order-lg-2 d-flex flex-wrap justify-content-center">
-                    <p class="display-6 mb-3 text-center tilly-color font-weight-light">To keep up to date with news &
-                        information, like and
-                        follow my socials and subscribe to my YouTube channel for more videos!
+                    <p class="display-6 mb-3 text-center tilly-color font-weight-light">
+                        To keep up to date with news & information, like and follow
+                        my socials and subscribe to my YouTube channel for more videos!
                     </p>
                     <div class="socials px-0 px-xl-5">
                         <a href="https://www.facebook.com/TillysTailsBrighton/" target="blank">
@@ -187,7 +187,9 @@
         </div>
     </main>
 
-    <footer class="footer mt-auto pb-3 border-top">
+    <hr class="mx-5 my-0" style="border-top: 1px solid rgb(185, 185, 185)" />
+
+    <footer class="footer mt-auto pb-3">
         <div class="d-flex flex-wrap justify-content-center pt-3 px-3">
             <span>
                 <img src="./images/07-icons/paws_black_icon.png" alt="" class="pb-2 pr-2 opaque-half" width="30px"
@@ -195,20 +197,6 @@
             </span>
             <span class="text-muted text-center pr-2">Tilly's Tails Pet Care </span>
             <span class="text-muted text-center">- for yours and your pets needs</span>
-        </div>
-        <div class="socials d-flex justify-content-center mt-1 d-block d-sm-none">
-            <a href="https://www.facebook.com/TillysTailsBrighton/" target="blank">
-                <img src="./images/07-icons/facebook.jpg" alt="facebook" class="nav-social-icons mx-1" width="30px"
-                    height="30px" />
-            </a>
-            <a href="https://www.instagram.com/tillystailspetcare/" target="blank">
-                <img src="./images/07-icons/instagram.png" alt="instagram" class="nav-social-icons mx-1" width="30px"
-                    height="30px" />
-            </a>
-            <a href="https://www.youtube.com/channel/UCHKa4eKd5LNhhjcHqmUAeXQ" target="blank">
-                <img src="./images/07-icons/youtube.png" alt="youtube" class="nav-social-icons mx-1" width="30px"
-                    height="30px" />
-            </a>
         </div>
     </footer>
 
@@ -237,19 +225,19 @@
             });
 
             $(".btn-custom").hover(function (event) {
-                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "#000", "opacity": "0.5", "transform":"scale(1.05)" });
+                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "#000", "opacity": "0.5", "transform": "scale(1.05)" });
                 $(event.target).css({ "background-color": "white", "color": "#F4993C", "border-color": "#F4993C" });
             }, function (event) {
-                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "none", "opacity": "1", "transform":"scale(1)" });
+                $(event.target).siblings(".card-link-overlay").children().css({ "background-color": "none", "opacity": "1", "transform": "scale(1)" });
                 $(event.target).css({ "background-color": "#F4993C", "color": "white" });
             });
 
             $(".card-image-overlay").hover(function (event) {
                 $(event.target).parent().siblings(".btn-custom").css({ "background-color": "white", "color": "#F4993C", "border-color": "#F4993C" });
-                $(event.target).css({ "background-color": "#000", "opacity": "0.5", "transform":"scale(1.05)" });
+                $(event.target).css({ "background-color": "#000", "opacity": "0.5", "transform": "scale(1.05)" });
             }, function (event) {
                 $(event.target).parent().siblings(".btn-custom").css({ "background-color": "#F4993C", "color": "white" });
-                $(event.target).css({ "background-color": "none", "opacity": "1", "transform":"scale(1)" });
+                $(event.target).css({ "background-color": "none", "opacity": "1", "transform": "scale(1)" });
             });
         });
     </script>
