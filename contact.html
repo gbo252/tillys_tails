@@ -21,7 +21,7 @@
 <body class="d-flex flex-column h-100">
 
     <header>
-        <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-white border-bottom py-1">
+        <nav class="navbar navbar-expand-xl fixed-top navbar-light bg-white py-1">
             <span class="navbar-brand mb-0 mr-3 mr-sm-0 h1 order-sm-2 order-1 order-xl-1 font-weight-normal"
                 style="color: rgb(8, 172, 248);">
                 <span>
@@ -54,7 +54,8 @@
                         <a class="nav-link" href="./reviews.html">Reviews</a>
                     </li>
                     <li class="nav-item px-4">
-                        <a class="nav-link nav-active" href="./contact.html">Contact Me<span class="sr-only">(current)</span></a>
+                        <a class="nav-link nav-active" href="./contact.html">Contact Me<span
+                                class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item px-4 pt-2 d-block d-sm-none border-top">
                         <a class="nav-link" href="https://www.facebook.com/TillysTailsBrighton/" target="blank"
@@ -101,16 +102,40 @@
 
             <div class="row d-flex justify-content-center align-items-center">
                 <div class="col-12">
-                    <hr class="w-50 mt-0 mb-2" style="border-top: 4px double #F4993C;" />
+                    <hr class="w-50 mt-0 mb-2" style="border-top: 3px outset rgba(244, 152, 60, 0.7);" />
                 </div>
             </div>
 
-
             <div class="row mt-4 plain-font d-flex justify-content-center align-items-center">
-                
-
+                <div class="col-4 d-flex justify-content-center align-items-center">
+                    <div class="embed-responsive embed-responsive-16by9 border-custom rounded-lg">
+                        <iframe class="embed-responsive-item"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10077.476220471157!2d-0.15880316597890157!3d50.84284980565164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487585627e0915e9%3A0x4a745cd2379603dc!2sPreston+Rd%2C+Brighton+BN1+6SE!5e0!3m2!1sen!2suk!4v1560791500679!5m2!1sen!2suk"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-3 d-flex justify-content-center align-items-center">
+                    
+                </div>
+                <div class="col-3 rounded-lg border-custom" style="background-color: rgb(244, 153, 60);">
+                    <form action="https://mailthis.to/you@mail.com" method="POST">
+                        <input type="text" name="name" placeholder="Name" class="form-control my-3" required>
+                        <input type="email" name="_replyto" placeholder="Email" class="form-control my-3" required>
+                        <textarea name="message" placeholder="Message" rows="6" class="form-control my-3"
+                            required></textarea>
+                        <input type="hidden" name="_subject" value="Website contact form submission">
+                        <input type="hidden" name="_honeypot" value="">
+                        <input type="hidden" name="_confirmation" value="Message sent">
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-form-custom mb-3">Send Message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
 
+            <div class="row mt-4 mb-5 plain-font d-flex justify-content-center align-items-center">
+
+            </div>
 
         </div>
     </main>

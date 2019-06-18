@@ -55,14 +55,22 @@ body {
 }
 
 .tails-color {
-    color: #F4993C;
+    color: rgb(244, 153, 60);
 }
 
 .opaque-half {
     opacity: 0.5;
 }
 
+.border-custom {
+    border: 5px ridge rgb(244, 153, 60);
+}
+
 /* NAVBAR */
+
+header nav.navbar {
+    border-bottom: 2px solid rgba(128, 128, 128, 0.5);
+}
 
 button.navbar-toggler, button.navbar-toggler:active, button.navbar-toggler:focus {
     outline: none !important;
@@ -114,6 +122,35 @@ ul.navbar-nav li.nav-item a.nav-active {
     width: 100px;
     height: auto;
     transform: rotate(350deg);
+}
+
+/* ------------ SERVICES PAGE ------------ */
+
+/* ------------ REVIEWS PAGE ------------ */
+
+/* ------------ CONTACT PAGE ------------ */
+
+.form-control {
+    border: 3px inset #F4993C;
+}
+
+.form-control:focus {
+    border-color: white;
+}
+
+.btn-form-custom {
+    font-family: 'Kalam', cursive;
+    letter-spacing: 2px;
+    color: white;
+    border: 3px outset white;
+    background-color: rgb(216, 126, 35);
+    box-shadow: 3px 3px 4px 3px rgba(24, 24, 24, 0.5);
+}
+
+.btn-form-custom:hover {
+    color: white;
+    box-shadow: 4px 4px 5px 4px rgba(24, 24, 24, 0.4);
+    transform: translateY(-2px);
 }
 
 /* ------------ MEDIA QUERIES ------------ */
